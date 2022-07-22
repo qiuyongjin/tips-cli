@@ -18,7 +18,12 @@
     "prepublishOnly": "pnpm run build",
     "release": "bumpp --commit --tag --push && pnpm publish --no-git-checks"
   },
-  "keywords": [],
+  "keywords": [
+    "text show",
+    "text",
+    "show",
+    "display"
+  ],
   "author": "Jake <qiu5630@163.com>",
   "license": "ISC",
   "homepage": "https://github.com/qiuyongjin/tips-cli#readme",

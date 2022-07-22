@@ -1,9 +1,12 @@
 import {program} from 'commander'
 import {version} from '../package.json'
 import {sqlAction} from "./commands/sql";
+import {guide} from "./commands/guide";
+import print from "./utils/print";
 
 program
   .version(version)
+  .action(guide)
 
 /**
  * sql 相关操作
@@ -23,6 +26,7 @@ program
   .command('git')
   .description('git 相关操作')
   .action(() => {
+    print.title('git 相关操作')
     console.log(`    git push --delete origin <tagname>`)
     const t = `
     echo "# text-show" >> README.md

@@ -1,6 +1,7 @@
 import c from "picocolors";
+import print from "../../utils/print";
 
 export function selectHelp() {
   const example = `${c.yellow('select')} * from table`
-  console.log(example)
+  print.general(example)
 }
